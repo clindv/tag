@@ -8,7 +8,9 @@
 ## Usage
 
 先Ctrl+C整本书，再运行
+
     $ java -jar tag.jar
+
 Ctrl+V查看结果
 
 ## Options
