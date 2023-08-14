@@ -23,9 +23,9 @@
       (try (.write wtr (apply str (interpose "," new-list)))
            (catch Exception e "")))))
 (def vocabulary
-  (-> "vocabulary.txt"
-      clojure.java.io/resource
-      .getFile
+  (-> (Thread/currentThread)
+      .getContextClassLoader
+      (.getResourceAsStream "vocabulary.txt")
       slurp
       (clojure.string/split #",")
       (interleave (range))
