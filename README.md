@@ -1,10 +1,13 @@
 # tag
 
-FIXME: description
+将剪切板的英语文本词频排序后输入回剪切板，Ctrl+V查看结果。
 
 ## Installation
 
-Download from http://example.com/FIXME.
+可另行下载换用更高级的向量数据库
+Download glove.6B.50d.txt to ./target from https://nlp.stanford.edu/projects/glove/
+Mirror link: https://www.kaggle.com/datasets/anindya2906/glove6b?resource=download
+再依次调用acrostic和init-actostic-trim即完成resources构建，词汇量为acrostic函数的默认400000
 
 ## Usage
 
@@ -14,7 +17,7 @@ FIXME: explanation
 
 ## Options
 
-FIXME: listing of options this app accepts.
+可添加数字作为参数，filter easy words, default 10000. (designed for book思议 = 苏苏)
 
 ## Examples
 
