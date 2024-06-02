@@ -33,7 +33,7 @@
 (defn annotate
   [input-string threshold]
   (->> input-string
-       (#(clojure.string/split % #"[^\w']+|[\d+_-]+"))
+       (#(clojure.string/split % #"[^\w']+|[\d_-]+"))
        (map clojure.string/lower-case)
        distinct
        (map #(list % (vocabulary %)))
